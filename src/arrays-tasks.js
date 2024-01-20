@@ -289,9 +289,6 @@ function createNDimensionalArray(n, size) {
  *    flattenArray([1, 2, 3, 4]) => [1, 2, 3, 4]
  */
 function flattenArray(nestedArray) {
-  // const result = nestedArray.map (el => {
-
-  // })
   return nestedArray.flatMap((el) => {
     if (Array.isArray(el)) return el.flat();
     return el;
@@ -625,7 +622,6 @@ function sortDigitNamesByNumericOrder(arr) {
  *
  */
 function swapHeadAndTail(arr) {
-  // const half = Number.isInteger(arr.length / 2) ? null : Math.ceil(arr.length / 2);
   const half = arr.length / 2;
   if (!Number.isInteger(half)) {
     const roundHalf = Math.ceil(half);
